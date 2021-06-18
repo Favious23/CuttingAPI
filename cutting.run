@@ -1,0 +1,7 @@
+reset;
+model cutting.mod;
+data cutting.dat;
+option solver cplex;
+option omit_zero_rows 1;
+solve;
+display z,X,Y;
